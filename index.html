@@ -5,14 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Word Guess Game</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
     
 </head>
 <body>
-    
+    <h1>Hangman - <em>Christmas Edition</em></h1>
 
+    <div id="wrapperForContent">
+        <div class="box" id="block1"> 
+            <div id="containerForScore">
+                <h3 id="score">Score</h3>
+                <div id="wintitle">Wins
+                    <div id="winCount"></div>
+                </div>
+                <div id="lossTitle">Losses
+                    <div id="lossCount"></div>
+                </div>
+            </div>
+            <div id="containerForMovie">
+                <div id="currentWordPicture"></div>
+                <div id="currentWordSong"></div>
+                <div id="winLoseMessage"></div>
+                <div id="userGuess"></div>
+            </div>
+        </div>
+        
+        <div class="box" id="block2">
+            <div id="containerForWord">
+                <h4 id="guessTitle">Guess the Letters that go in the Blanks</h4>
+                <div id="blanks"></div>
+            </div>
+        </div>
+        
+        <div class="box" id="block3">
+            <div id="containerForRemainingGuesses">
+                <h3 id="guessesRemainingTitle">Number of Remaining Letter Guesses</h3>
+                <div id="lives"></div>
+            </div>
+            <div id="containerForLettersGuessed">
+                <h3 id="lettersTitle">Letters</h3>
+                <div id="alphabet"></div>
+            </div>
+        </div>
 
+            <div onkeydown="getKey(event)" id="lettersGuessed"></div>
+        </div>
 
-    <script src="game.js"></script>
+    <script src="assets/javascript/game.js"></script>
 </body>
 </html>
