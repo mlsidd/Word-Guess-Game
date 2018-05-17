@@ -62,12 +62,7 @@ OTHER:
 
 
 
-document.onkeypress = function(event) {
-    var userLetterGuess = event.key.toLowerCase();
-
-
-
-
+    
 
 
 
